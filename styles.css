@@ -703,7 +703,12 @@ a {
 /* ---------- product teaser ---------- */
 .product {
   text-align: center;
-  padding: 0 var(--gutter) var(--section-gap);
+  padding: var(--section-gap) var(--gutter) calc(var(--section-gap) * 0.9);
+  background:
+    linear-gradient(rgba(5, 8, 7, 0.86), rgba(5, 8, 7, 0.86)),
+    url("assets/bg-product.jpg") center / cover no-repeat;
+  -webkit-mask-image: linear-gradient(transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(transparent, #000 12%, #000 88%, transparent);
 }
 
 .product-tag {
@@ -940,6 +945,9 @@ a {
 .legal-shell {
   padding: clamp(8rem, 16vh, 11rem) var(--gutter) 4rem;
   min-height: 72vh;
+  background:
+    linear-gradient(rgba(5, 8, 7, 0.9), rgba(5, 8, 7, 0.78) 40%, rgba(5, 8, 7, 1) 78%),
+    url("assets/bg-legal.jpg") top center / 100% auto no-repeat;
 }
 
 .dossier {
@@ -1392,7 +1400,9 @@ a {
 
   .hero::before,
   .manifesto,
-  .contact {
+  .contact,
+  .product,
+  .legal-shell {
     background: none;
   }
 

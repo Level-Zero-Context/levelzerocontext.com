@@ -16,7 +16,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preload" as="image" href="assets/bg-hero.jpg">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
   <script src="script.js" defer></script>
   <script type="application/ld+json">
   {
@@ -194,25 +194,31 @@
       <h3 class="product-name" data-reveal style="--d:100ms"><a href="https://bullshitbox.ai">Bullshit<span>box</span></a></h3>
       <div class="product-visual" data-reveal style="--d:150ms">
         <svg class="illu illu-wide" viewBox="0 0 460 170" aria-hidden="true" focusable="false">
-          <rect class="s" x="24" y="30" width="104" height="72" rx="8"/>
-          <path class="s" d="M76 102 L76 122"/>
-          <path class="s" d="M56 124 L96 124"/>
-          <circle class="f pulse" cx="76" cy="66" r="3"/>
-          <path class="s g flow" d="M132 66 L206 66"/>
-          <path class="s" opacity="0.8" d="M198 60 L206 66 L198 72"/>
+          <defs>
+            <linearGradient id="bx-warmcold" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#f5c56b"/>
+              <stop offset="1" stop-color="#8ee3c3"/>
+            </linearGradient>
+          </defs>
+          <rect class="s w" x="24" y="30" width="104" height="72" rx="8"/>
+          <path class="s w" d="M76 102 L76 122"/>
+          <path class="s w" d="M56 124 L96 124"/>
+          <circle class="wf pulse" cx="76" cy="66" r="3"/>
+          <path class="flow" stroke="url(#bx-warmcold)" d="M132 66 L206 66"/>
+          <path class="s g" opacity="0.8" d="M198 60 L206 66 L198 72"/>
           <g opacity="0.7">
-            <path class="s" d="M148 36 C155 27 169 27 176 36 C169 45 155 45 148 36 Z"/>
-            <circle class="f" cx="162" cy="36" r="3"/>
+            <path class="s g" d="M148 36 C155 27 169 27 176 36 C169 45 155 45 148 36 Z"/>
+            <circle class="gf" cx="162" cy="36" r="3"/>
           </g>
           <rect class="s g" x="206" y="34" width="92" height="64" rx="10"/>
           <path class="s g" opacity="0.55" d="M228 78 L276 78"/>
           <circle class="gf blink" cx="284" cy="46" r="3"/>
           <path class="s g flow" d="M298 66 L366 66"/>
-          <path class="s" opacity="0.8" d="M358 60 L366 66 L358 72"/>
+          <path class="s g" opacity="0.8" d="M358 60 L366 66 L358 72"/>
           <g opacity="0.7">
-            <path class="s" d="M320 28 L334 39 L326 40 L331 49 L327 51 L322 42 L316 47 Z"/>
+            <path class="s g" d="M320 28 L334 39 L326 40 L331 49 L327 51 L322 42 L316 47 Z"/>
           </g>
-          <rect class="s" x="366" y="38" width="70" height="56" rx="8"/>
+          <rect class="s g" x="366" y="38" width="70" height="56" rx="8"/>
           <path class="s" opacity="0.5" d="M366 50 L354 50 M366 66 L354 66 M366 82 L354 82 M402 38 L402 26 M418 38 L418 26 M436 50 L448 50 M436 66 L448 66 M436 82 L448 82"/>
           <circle class="gf pulse" cx="401" cy="58" r="3.5"/>
           <circle class="f" cx="386" cy="74" r="2.5"/>
@@ -221,6 +227,12 @@
         </svg>
       </div>
       <p class="product-line" data-reveal style="--d:200ms">A box between an AI and any computer — video in, input out, no integration needed. It turns human interaction into procedures an agent can replay.</p>
+      <p class="product-verdicts" data-reveal style="--d:260ms" aria-hidden="true">
+        <span class="vchip v-pass">PASS</span>
+        <span class="vchip v-fail">FAIL</span>
+        <span class="vchip v-human">NEED_HUMAN</span>
+        <em>no vibes.</em>
+      </p>
       <div class="product-actions" data-reveal style="--d:300ms">
         <span class="tag">video in · hid out</span>
         <a class="product-link" href="https://bullshitbox.ai">visit bullshitbox.ai →</a>

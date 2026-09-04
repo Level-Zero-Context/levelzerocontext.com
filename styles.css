@@ -795,6 +795,123 @@ a {
   border-color: var(--green);
 }
 
+/* a hint of bullshitbox.ai — cold machine / warm human (BUIL-25) */
+.product {
+  --bx-cold: #8ee3c3;
+  --bx-warm: #f5c56b;
+}
+
+.product .product-tag {
+  color: var(--bx-cold);
+}
+
+.product .product-name span {
+  -webkit-text-stroke-color: var(--bx-cold);
+}
+
+.product .product-name a:hover span {
+  color: var(--bx-cold);
+}
+
+.product .product-link:hover {
+  color: var(--bx-cold);
+  border-color: var(--bx-cold);
+}
+
+.product .tag {
+  color: var(--bx-cold);
+  border-color: rgba(142, 227, 195, 0.3);
+}
+
+.product .illu .g {
+  stroke: var(--bx-cold);
+}
+
+.product .illu .gf {
+  fill: var(--bx-cold);
+}
+
+.illu .w {
+  stroke: var(--bx-warm, var(--green));
+}
+
+.illu .wf {
+  fill: var(--bx-warm, var(--green));
+}
+
+.product-visual {
+  position: relative;
+  max-width: 560px;
+  margin: 2.2rem auto 2.4rem;
+  padding: 1.6rem 1.4rem;
+  border: 1px solid rgba(142, 227, 195, 0.22);
+}
+
+.product-visual::before,
+.product-visual::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(142, 227, 195, 0.55);
+}
+
+.product-visual::before {
+  top: -1px;
+  left: -1px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.product-visual::after {
+  bottom: -1px;
+  right: -1px;
+  border-left: none;
+  border-top: none;
+}
+
+.product-verdicts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin: 1.6rem 0 0;
+}
+
+.product-verdicts .vchip {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  padding: 0.28rem 0.62rem;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.vchip.v-pass {
+  color: #ffd865;
+  border-color: rgba(255, 216, 101, 0.5);
+  background: rgba(255, 216, 101, 0.06);
+}
+
+.vchip.v-fail {
+  color: #ff5c5c;
+  border-color: rgba(255, 92, 92, 0.5);
+  background: rgba(255, 92, 92, 0.06);
+}
+
+.vchip.v-human {
+  color: #ffb054;
+  border-color: rgba(255, 176, 84, 0.5);
+  background: rgba(255, 176, 84, 0.06);
+}
+
+.product-verdicts em {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+}
+
 /* ---------- contact ---------- */
 .contact {
   position: relative;

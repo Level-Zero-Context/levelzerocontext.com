@@ -748,49 +748,70 @@ a {
 .product-tag {
   margin: 0 0 1.2rem;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.32em;
+  font-size: 0.7rem;
+  letter-spacing: 0.55em;
   text-transform: uppercase;
-  color: var(--green);
+  color: rgba(142, 227, 195, 0.5);
 }
 
 .product-name {
-  margin: 0 0 1.2rem;
-  font-size: clamp(2.8rem, 9vw, 8rem);
-  font-weight: 800;
+  margin: 0 auto 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(3rem, 12.5vw, 10rem);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -0.03em;
-  line-height: 0.95;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
 }
 
 .product-name a {
-  color: inherit;
+  color: var(--bx-ink, #eef2ff);
   text-decoration: none;
 }
 
-.product-name span {
+.product .bx-line {
+  position: relative;
+  z-index: 0;
+  display: block;
+  padding: 0.04em 0.12em;
+}
+
+.product .bx-line::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(55% 75% at 50% 50%, rgba(142, 227, 195, 0.14), transparent 72%);
+}
+
+.product .bx-outline::before {
+  background: radial-gradient(55% 75% at 50% 50%, rgba(245, 197, 107, 0.12), transparent 72%);
+}
+
+.product .bx-outline {
   color: transparent;
-  -webkit-text-stroke: 2px var(--green);
+  -webkit-text-stroke: 2px rgba(245, 197, 107, 0.85);
   transition: color 0.35s;
 }
 
-.product-name a:hover span {
-  color: var(--green);
+.product .product-name a:hover .bx-outline {
+  color: rgba(245, 197, 107, 0.22);
 }
 
 @supports not (-webkit-text-stroke: 1px black) {
-  .product-name span {
-    color: var(--green);
+  .product .bx-outline {
+    color: rgba(245, 197, 107, 0.55);
   }
 }
 
 .product-line {
-  margin: 0 auto 1.6rem;
-  max-width: 34rem;
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 1.1rem;
-  color: var(--ink-body);
+  margin: 1.6rem auto;
+  max-width: 46rem;
+  font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+  letter-spacing: 0.02em;
+  color: var(--bx-muted, rgba(238, 242, 255, 0.62));
 }
 
 .product-actions {
@@ -833,6 +854,10 @@ a {
 .product {
   --bx-cold: #8ee3c3;
   --bx-warm: #f5c56b;
+  --bx-ink: #eef2ff;
+  --bx-muted: rgba(238, 242, 255, 0.62);
+  --bx-font: "Inter", "Helvetica Neue", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-family: var(--bx-font);
 }
 
 .product .product-tag {
@@ -914,12 +939,28 @@ a {
 }
 
 .product-verdicts .vchip {
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
+  font-size: 0.72rem;
   letter-spacing: 0.18em;
-  padding: 0.28rem 0.62rem;
+  padding: 0.32rem 0.7rem;
   border: 1px solid;
   border-radius: 3px;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+}
+
+.product-verdicts .vchip:hover {
+  transform: translateY(-3px);
+}
+
+.vchip.v-pass:hover {
+  box-shadow: 0 6px 24px rgba(255, 216, 101, 0.25);
+}
+
+.vchip.v-fail:hover {
+  box-shadow: 0 6px 24px rgba(255, 92, 92, 0.25);
+}
+
+.vchip.v-human:hover {
+  box-shadow: 0 6px 24px rgba(255, 176, 84, 0.25);
 }
 
 .vchip.v-pass {
@@ -943,7 +984,8 @@ a {
 .product-verdicts em {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
-  color: var(--ink-faint);
+  font-style: italic;
+  color: rgba(238, 242, 255, 0.34);
 }
 
 /* ---------- contact ---------- */

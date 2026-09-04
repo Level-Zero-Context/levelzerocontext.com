@@ -717,27 +717,32 @@ a {
   z-index: 1;
 }
 
-/* the cultivate robot — presented like a bullshitbox.ai stage:
-   full-bleed artwork, thin veil, the whole body on display */
-.product-art {
-  position: relative;
-  height: min(92vh, 920px);
-  margin: calc(var(--section-gap) * 0.35) calc(-1 * var(--gutter)) 0;
-  background: url("assets/bg-robot.jpg") center bottom / contain no-repeat;
-}
-
-.product-art::before {
+/* the cultivate robot — the product section's own backdrop,
+   the whole machine on display like a bullshitbox.ai stage */
+.product::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    var(--bg) 0%,
-    rgba(5, 8, 7, 0.3) 20%,
-    rgba(5, 8, 7, 0.1) 50%,
-    rgba(5, 8, 7, 0.12) 78%,
-    rgba(5, 8, 7, 0.4) 100%
-  );
+  inset: auto 0 0 0;
+  height: min(92vh, 900px);
+  background:
+    radial-gradient(ellipse 58% 52% at 50% 52%, rgba(3, 8, 6, 0.7), rgba(3, 8, 6, 0.3) 62%, transparent 80%),
+    radial-gradient(ellipse 42% 16% at 50% 90%, rgba(3, 8, 6, 0.62), transparent 78%),
+    linear-gradient(
+      180deg,
+      var(--bg) 0%,
+      rgba(5, 8, 7, 0.55) 16%,
+      rgba(5, 8, 7, 0.16) 38%,
+      rgba(5, 8, 7, 0.12) 66%,
+      rgba(5, 8, 7, 0.4) 88%,
+      rgba(5, 8, 7, 0.58) 100%
+    ),
+    url("assets/bg-robot.jpg") center bottom / contain no-repeat;
+  pointer-events: none;
+}
+
+.product > * {
+  position: relative;
+  z-index: 1;
 }
 
 .product-tag {
@@ -1552,7 +1557,8 @@ a {
     background: none;
   }
 
-  .product-art {
+  .product-art,
+  .product::after {
     display: none;
   }
 

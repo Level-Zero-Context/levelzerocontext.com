@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Level Zero Context ist eine KI-Agentur und baut die Bullshitbox: Wir bringen KI verständlich und sicher in Ihr Unternehmen. Einfach erklärt, ohne Fachwörter.">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#f5f7f5">
+  <meta name="theme-color" content="#fbfbfd">
   <link rel="canonical" href="https://levelzerocontext.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Level Zero Context — KI-Agentur. Einfach erklärt.">
@@ -15,7 +15,7 @@
   <meta property="og:image" content="https://levelzerocontext.com/assets/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
   <script src="script.js" defer></script>
   <script type="application/ld+json">
   {
@@ -61,9 +61,11 @@
 
     <section class="benefits" id="leistungen">
       <div class="wrap">
-        <p class="eyebrow" data-reveal>Was wir für Sie tun</p>
-        <h2 data-reveal>Drei Dinge, die wir richtig gut können.</h2>
-        <p class="section-sub" data-reveal>Sie müssen kein IT-Experte sein. Wir übersetzen, planen und bauen — und prüfen alles doppelt.</p>
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>Was wir für Sie tun</p>
+          <h2 data-reveal>Drei Dinge, die wir richtig gut können.</h2>
+          <p class="section-sub" data-reveal>Sie müssen kein IT-Experte sein. Wir übersetzen, planen und bauen — und prüfen alles doppelt.</p>
+        </div>
         <div class="card-grid">
           <article class="card" data-reveal>
             <div class="card-icon" aria-hidden="true">
@@ -92,9 +94,11 @@
 
     <section class="steps" id="ablauf">
       <div class="wrap">
-        <p class="eyebrow" data-reveal>So arbeiten wir</p>
-        <h2 data-reveal>In drei Schritten zur eigenen KI-Lösung.</h2>
-        <p class="section-sub" data-reveal>Kein langer Projekt-Marsch. Sie wissen immer, wo wir stehen.</p>
+        <div class="section-head">
+          <p class="eyebrow" data-reveal>So arbeiten wir</p>
+          <h2 data-reveal>In drei Schritten zur eigenen KI-Lösung.</h2>
+          <p class="section-sub" data-reveal>Kein langer Projekt-Marsch. Sie wissen immer, wo wir stehen.</p>
+        </div>
         <div class="step-grid">
           <div class="step" data-reveal>
             <span class="num" aria-hidden="true">1</span>
@@ -117,25 +121,27 @@
 
     <section class="product" id="produkt">
       <div class="wrap">
-        <p class="eyebrow" data-reveal>Unser Produkt</p>
-        <h2 data-reveal>Die Bullshitbox</h2>
-        <div class="product-grid">
+        <div class="product-stage">
+          <p class="eyebrow" data-reveal>Unser Produkt</p>
+          <h2 data-reveal>Die Bullshitbox.</h2>
           <div class="product-copy" data-reveal>
             <p>Eine kleine Box zwischen KI und Computer: Bildschirm rein, Eingabe raus. Kein Umbau nötig.</p>
             <p>Sie lernt Arbeits-Abläufe vom Menschen und kann sie später selbst erledigen. Und sie entscheidet ehrlich: erledigt, Fehler — oder bitte mit dem Menschen sprechen.</p>
-            <div class="chip-row" aria-hidden="true">
-              <span class="chip chip-pass">PASS</span>
-              <span class="chip chip-fail">FAIL</span>
-              <span class="chip chip-human">NEED_HUMAN</span>
-              <span class="novibes">no vibes.</span>
-            </div>
-            <a class="btn btn-ghost" href="https://bullshitbox.ai">Mehr auf bullshitbox.ai →</a>
           </div>
-          <figure class="product-figure" data-reveal style="--d:150ms">
-            <img src="assets/bg-robot.jpg" alt="Ein Roboter im Jugendstil-Knigge pflegt Blumen auf einem Steinsockel." loading="lazy">
-            <figcaption>Der Roboter der Bullshitbox — er pflegt, was Menschen ihm beibringen.</figcaption>
-          </figure>
+          <div class="chip-row" data-reveal aria-hidden="true">
+            <span class="chip chip-pass">PASS</span>
+            <span class="chip chip-fail">FAIL</span>
+            <span class="chip chip-human">NEED_HUMAN</span>
+            <span class="novibes">no vibes.</span>
+          </div>
+          <div data-reveal>
+            <a class="btn btn-primary" href="https://bullshitbox.ai">Mehr auf bullshitbox.ai</a>
+          </div>
         </div>
+        <figure class="product-figure" data-reveal>
+          <img src="assets/bg-robot.jpg" alt="Ein Roboter im Jugendstil pflegt Blumen auf einem Steinsockel." loading="lazy">
+          <figcaption>Der Roboter der Bullshitbox — er pflegt, was Menschen ihm beibringen.</figcaption>
+        </figure>
       </div>
     </section>
 

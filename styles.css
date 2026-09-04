@@ -704,31 +704,40 @@ a {
 .product {
   position: relative;
   text-align: center;
-  padding: var(--section-gap) var(--gutter) calc(var(--section-gap) * 0.9);
+  padding: var(--section-gap) var(--gutter) 0;
   background:
     linear-gradient(rgba(5, 8, 7, 0.86), rgba(5, 8, 7, 0.86)),
     url("assets/bg-product.jpg") center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(transparent, #000 12%, #000 88%, transparent);
-  mask-image: linear-gradient(transparent, #000 12%, #000 88%, transparent);
-}
-
-/* the cultivate robot — a glimpse of bullshitbox.ai rising from the bottom */
-.product::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0 0;
-  height: clamp(240px, 48%, 440px);
-  background:
-    linear-gradient(180deg, var(--bg) 0%, rgba(5, 8, 7, 0.52) 46%, rgba(5, 8, 7, 0.3) 100%),
-    url("assets/bg-robot.jpg") center bottom / cover no-repeat;
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 58%);
-  mask-image: linear-gradient(180deg, transparent 0%, #000 58%);
-  pointer-events: none;
+  -webkit-mask-image: linear-gradient(transparent, #000 10%, #000 97%, rgba(0, 0, 0, 0.55));
+  mask-image: linear-gradient(transparent, #000 10%, #000 97%, rgba(0, 0, 0, 0.55));
 }
 
 .product > * {
   position: relative;
   z-index: 1;
+}
+
+/* the cultivate robot — presented like a bullshitbox.ai stage:
+   full-bleed artwork, thin veil, the whole body on display */
+.product-art {
+  position: relative;
+  height: min(92vh, 920px);
+  margin: calc(var(--section-gap) * 0.35) calc(-1 * var(--gutter)) 0;
+  background: url("assets/bg-robot.jpg") center bottom / contain no-repeat;
+}
+
+.product-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    var(--bg) 0%,
+    rgba(5, 8, 7, 0.3) 20%,
+    rgba(5, 8, 7, 0.1) 50%,
+    rgba(5, 8, 7, 0.12) 78%,
+    rgba(5, 8, 7, 0.4) 100%
+  );
 }
 
 .product-tag {
@@ -1543,7 +1552,7 @@ a {
     background: none;
   }
 
-  .product::after {
+  .product-art {
     display: none;
   }
 

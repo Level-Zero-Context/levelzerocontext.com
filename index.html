@@ -2,20 +2,21 @@
 <html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>Level Zero Context — KI-Agentur. Einfach erklärt.</title>
+  <title>KI-Agentur für den Mittelstand — einfach und sicher | Level Zero Context</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Level Zero Context ist eine KI-Agentur und baut die Bullshitbox: Wir bringen KI verständlich und sicher in Ihr Unternehmen. Einfach erklärt, ohne Fachwörter.">
+  <meta name="description" content="Level Zero Context bringt KI verständlich und sicher in Ihr Unternehmen. Planung, Bau und Prüfung aus einer Hand. In einfacher Sprache, ohne Fachwörter. Jetzt Erstgespräch anfragen.">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#fbfbfd">
+  <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://levelzerocontext.com/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Level Zero Context — KI-Agentur. Einfach erklärt.">
-  <meta property="og:description" content="KI-Agentur. Macher der Bullshitbox — KI hilft am Computer, ganz wie ein Mensch.">
+  <meta property="og:title" content="KI-Agentur für den Mittelstand — einfach und sicher">
+  <meta property="og:description" content="Wir planen, bauen und prüfen KI-Lösungen für Ihren Betrieb. In einfacher Sprache, aus einer Hand.">
   <meta property="og:url" content="https://levelzerocontext.com/">
   <meta property="og:image" content="https://levelzerocontext.com/assets/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/manrope-var.woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=1">
   <script src="script.js" defer></script>
   <script type="application/ld+json">
   {
@@ -28,92 +29,166 @@
     "sameAs": "https://bullshitbox.ai"
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Was kostet ein KI-Projekt?", "acceptedAnswer": { "@type": "Answer", "text": "Jedes Projekt ist anders. Nach dem kostenlosen Erstgespräch bekommen Sie einen klaren Festpreis. Es gibt keine versteckten Kosten." } },
+      { "@type": "Question", "name": "Brauche ich eine IT-Abteilung?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Wir erklären jeden Schritt in normaler Sprache und richten alles für Sie ein. Ihr Team braucht kein Vorwissen." } },
+      { "@type": "Question", "name": "Sind meine Daten sicher?", "acceptedAnswer": { "@type": "Answer", "text": "Wir bauen so, dass Ihre Daten in Ihrem Unternehmen bleiben. Wir halten uns an die DSGVO und prüfen jede Lösung, bevor sie startet." } },
+      { "@type": "Question", "name": "Was ist die Bullshitbox?", "acceptedAnswer": { "@type": "Answer", "text": "Eine kleine Box zwischen KI und Computer. Sie lernt Arbeitsabläufe vom Menschen und kann sie später selbst erledigen. Mehr dazu auf bullshitbox.ai." } },
+      { "@type": "Question", "name": "Wie lange dauert ein Projekt?", "acceptedAnswer": { "@type": "Answer", "text": "Das hängt von der Aufgabe ab. Kleine Lösungen gehen in wenigen Wochen. Wir sagen Ihnen vorab, was realistisch ist." } },
+      { "@type": "Question", "name": "Was passiert nach dem Start?", "acceptedAnswer": { "@type": "Answer", "text": "Wir bleiben Ihr Ansprechpartner. Bei Fragen oder Problemen schreiben Sie uns einfach." } },
+      { "@type": "Question", "name": "Funktioniert das auch mit unserer bestehenden Software?", "acceptedAnswer": { "@type": "Answer", "text": "In der Regel ja. Im Erstgespräch prüfen wir das ehrlich und sagen Ihnen, was möglich ist." } },
+      { "@type": "Question", "name": "Was, wenn die Lösung nicht hilft?", "acceptedAnswer": { "@type": "Answer", "text": "Sie entscheiden nach jedem Schritt, ob es weitergeht. Es gibt keinen Mindestvertrag." } }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip" href="#main">Zum Inhalt springen</a>
 
-  <header class="site-head">
+  <nav class="nav-pill" aria-label="Hauptnavigation">
     <a class="brand" href="#top">Level<b>0</b>Context</a>
-    <nav class="site-nav" aria-label="Hauptnavigation">
+    <div class="nav-links">
       <a href="#leistungen">Leistungen</a>
       <a href="#produkt">Produkt</a>
-      <a href="#kontakt" class="btn btn-primary">Kontakt</a>
-    </nav>
-  </header>
+      <a href="#fragen">Fragen</a>
+    </div>
+    <a class="nav-cta" href="#kontakt">Erstgespräch</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="nav-overlay" id="mobile-menu">
+    <a href="#leistungen">Leistungen</a>
+    <a href="#produkt">Produkt</a>
+    <a href="#fragen">Fragen</a>
+    <a class="nav-cta" href="#kontakt">Erstgespräch anfragen</a>
+  </div>
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="wrap hero-inner">
-        <p class="eyebrow" data-reveal>KI-Agentur für den Mittelstand</p>
-        <h1 data-reveal>KI, die Ihrem Unternehmen <em>wirklich hilft.</em></h1>
-        <p class="hero-sub" data-reveal>Wir bringen KI verständlich und sicher in Ihren Betrieb — vom ersten Gespräch bis zur fertigen Lösung.</p>
-        <div class="cta-row" data-reveal>
-          <a class="btn btn-primary" href="#kontakt">Kostenlos anfragen</a>
-          <a class="btn btn-ghost" href="#leistungen">Unsere Leistungen</a>
+      <div class="wrap">
+        <p class="eyebrow reveal">KI-Agentur für den Mittelstand</p>
+        <h1 class="reveal" style="--d:100ms">KI für Ihr Unternehmen. Ohne IT Stress.</h1>
+        <p class="hero-sub reveal" style="--d:200ms">Level Zero Context plant, baut und prüft KI Lösungen für Ihren Betrieb. Und wir erklären jeden Schritt in normaler Sprache.</p>
+        <div class="hero-cta reveal" style="--d:300ms">
+          <a class="btn" href="#kontakt">Kostenloses Erstgespräch anfragen</a>
         </div>
-        <ul class="trust-row" data-reveal>
-          <li>Einfach erklärt</li>
-          <li>Sicher eingesetzt</li>
-          <li>Persönlich betreut</li>
-        </ul>
+        <p class="hero-proof reveal" style="--d:400ms">Entwickler der <a href="https://bullshitbox.ai">Bullshitbox</a>: eine KI, die Computer so bedient wie ein Mensch.</p>
+        <figure class="hero-visual reveal" style="--d:500ms">
+          <img src="assets/bg-robot.jpg" alt="Ein Roboter im Jugendstil kniet und pflegt Blumen auf einem Steinsockel." loading="eager">
+        </figure>
+      </div>
+    </section>
+
+    <section class="problem">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow reveal">Das Problem</p>
+          <h2 class="reveal" style="--d:100ms">KI Projekte scheitern selten an der Technik. Meistens scheitern sie an der Sprache.</h2>
+        </div>
+        <div class="problem-grid">
+          <div class="panel panel-pain reveal">
+            <h3>Ohne klaren Plan</h3>
+            <ul>
+              <li>Fachbegriffe, die niemand versteht</li>
+              <li>Teure Tools ohne echten Nutzen</li>
+              <li>Ungewissheit bei Datenschutz und Regeln</li>
+            </ul>
+          </div>
+          <div class="panel panel-gain reveal" style="--d:150ms">
+            <h3>Mit uns</h3>
+            <ul>
+              <li>Ein Ansprechpartner für alles</li>
+              <li>Normale Sprache statt Fachjargon</li>
+              <li>Klare Prüfungen vor jedem Start</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="benefits" id="leistungen">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow" data-reveal>Was wir für Sie tun</p>
-          <h2 data-reveal>Drei Dinge, die wir richtig gut können.</h2>
-          <p class="section-sub" data-reveal>Sie müssen kein IT-Experte sein. Wir übersetzen, planen und bauen — und prüfen alles doppelt.</p>
+          <p class="eyebrow reveal">Leistungen</p>
+          <h2 class="reveal" style="--d:100ms">Was Sie von uns bekommen.</h2>
         </div>
         <div class="card-grid">
-          <article class="card" data-reveal>
+          <article class="card reveal">
             <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+              <svg viewBox="0 0 256 256"><circle cx="128" cy="128" r="88"/><path d="M128 84v44l32 20"/></svg>
             </div>
-            <h3>Kontext</h3>
-            <p>Erst der Plan — dann der Bau. Wir sorgen dafür, dass Ihre KI die richtigen Informationen bekommt: Ihr Wissen, Ihre Regeln, Ihre Daten.</p>
+            <h3>Zeit gewinnen</h3>
+            <p>Die Box übernimmt wiederkehrende Aufgaben am Computer. Ihr Team kümmert sich um das Wesentliche.</p>
           </article>
-          <article class="card" data-reveal style="--d:100ms">
+          <article class="card reveal" style="--d:100ms">
             <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+              <svg viewBox="0 0 256 256"><path d="M216 112v40a88 88 0 0 1-176 0v-40z"/><path d="M128 24v88"/></svg>
             </div>
-            <h3>Prüfung</h3>
-            <p>Vertrauen ist gut. Prüfen ist besser. Wir testen jede Lösung gründlich, bevor sie bei Ihnen arbeitet.</p>
+            <h3>Verständlich bleiben</h3>
+            <p>Wir erklären jeden Schritt in normaler Sprache. Sie wissen immer, was passiert.</p>
           </article>
-          <article class="card" data-reveal style="--d:200ms">
+          <article class="card reveal" style="--d:200ms">
             <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H5l-2 2V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/><path d="M8 10h8M8 14h5"/></svg>
+              <svg viewBox="0 0 256 256"><path d="M40 114v30l88 32 88-32v-30"/><path d="M40 114l88-32 88 32-88 32z"/><path d="M128 146v52"/></svg>
             </div>
-            <h3>Bedeutung</h3>
-            <p>KI, die jeder versteht. Wir liefern fertige Lösungen für den Alltag — einfach zu bedienen, ganz ohne IT-Vorwissen.</p>
+            <h3>Sicher starten</h3>
+            <p>Jede Lösung wird gründlich geprüft, bevor sie bei Ihnen läuft. Ihre Daten bleiben in Ihrem Haus.</p>
+          </article>
+          <article class="card reveal" style="--d:300ms">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 256 256"><circle cx="128" cy="96" r="56"/><path d="M64 216c8-40 32-56 64-56s56 16 64 56"/></svg>
+            </div>
+            <h3>Aus einer Hand</h3>
+            <p>Planung, Bau und Pflege kommen von einem Ansprechpartner. Keine Weitergabe, keine Reibung.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="tagline" aria-label="Unser Anspruch">
+      <div class="wrap">
+        <p>
+          <span class="w">Gute</span>
+          <span class="w">KI</span>
+          <span class="w">hört</span>
+          <span class="w">zu.</span>
+          <span class="w">Gute</span>
+          <span class="w">KI</span>
+          <span class="w">hilft.</span>
+          <span class="w">Ohne</span>
+          <span class="w">Fachwörter.</span>
+        </p>
       </div>
     </section>
 
     <section class="steps" id="ablauf">
       <div class="wrap">
         <div class="section-head">
-          <p class="eyebrow" data-reveal>So arbeiten wir</p>
-          <h2 data-reveal>In drei Schritten zur eigenen KI-Lösung.</h2>
-          <p class="section-sub" data-reveal>Kein langer Projekt-Marsch. Sie wissen immer, wo wir stehen.</p>
+          <p class="eyebrow reveal">So arbeiten wir</p>
+          <h2 class="reveal" style="--d:100ms">In drei Schritten zu Ihrer Lösung.</h2>
         </div>
         <div class="step-grid">
-          <div class="step" data-reveal>
+          <div class="step reveal">
             <span class="num" aria-hidden="true">1</span>
-            <h3>Wir hören zu</h3>
-            <p>Im kostenlosen Erstgespräch lernen wir Ihr Unternehmen und Ihre Aufgaben kennen.</p>
+            <h3>Erstgespräch</h3>
+            <p>Wir lernen Ihr Unternehmen kennen. Sie erzählen, wo es klemmt. Das Gespräch kostet nichts.</p>
           </div>
-          <div class="step" data-reveal style="--d:100ms">
+          <div class="step reveal" style="--d:100ms">
             <span class="num" aria-hidden="true">2</span>
-            <h3>Wir bauen und prüfen</h3>
-            <p>Wir entwickeln Ihre Lösung und testen sie gründlich — bevor sie live geht.</p>
+            <h3>Plan und Bau</h3>
+            <p>Sie bekommen einen klaren Plan mit Festpreis. Dann bauen wir die Lösung und testen sie gründlich.</p>
           </div>
-          <div class="step" data-reveal style="--d:200ms">
+          <div class="step reveal" style="--d:200ms">
             <span class="num" aria-hidden="true">3</span>
-            <h3>Wir bleiben ansprechbar</h3>
-            <p>Wir richten alles ein, erklären es Ihrem Team und helfen weiter, wenn Sie Fragen haben.</p>
+            <h3>Start und Betreuung</h3>
+            <p>Wir richten alles ein und zeigen Ihrem Team, wie es geht. Danach bleiben wir Ansprechpartner.</p>
           </div>
         </div>
       </div>
@@ -121,39 +196,79 @@
 
     <section class="product" id="produkt">
       <div class="wrap">
-        <div class="product-stage">
-          <p class="eyebrow" data-reveal>Unser Produkt</p>
-          <h2 data-reveal>Die Bullshitbox.</h2>
-          <div class="product-copy" data-reveal>
-            <p>Eine kleine Box zwischen KI und Computer: Bildschirm rein, Eingabe raus. Kein Umbau nötig.</p>
-            <p>Sie lernt Arbeits-Abläufe vom Menschen und kann sie später selbst erledigen. Und sie entscheidet ehrlich: erledigt, Fehler — oder bitte mit dem Menschen sprechen.</p>
-          </div>
-          <div class="chip-row" data-reveal aria-hidden="true">
-            <span class="chip chip-pass">PASS</span>
-            <span class="chip chip-fail">FAIL</span>
-            <span class="chip chip-human">NEED_HUMAN</span>
-            <span class="novibes">no vibes.</span>
-          </div>
-          <div data-reveal>
-            <a class="btn btn-primary" href="https://bullshitbox.ai">Mehr auf bullshitbox.ai</a>
-          </div>
+        <div class="section-head">
+          <p class="eyebrow reveal">Unser Produkt</p>
+          <h2 class="reveal" style="--d:100ms">Die Bullshitbox.</h2>
         </div>
-        <figure class="product-figure" data-reveal>
-          <img src="assets/bg-robot.jpg" alt="Ein Roboter im Jugendstil pflegt Blumen auf einem Steinsockel." loading="lazy">
-          <figcaption>Der Roboter der Bullshitbox — er pflegt, was Menschen ihm beibringen.</figcaption>
+        <div class="product-copy reveal">
+          <p>Eine kleine Box zwischen KI und Computer: Bildschirm rein, Eingabe raus. Kein Umbau nötig.</p>
+          <p>Sie lernt Arbeitsabläufe vom Menschen und kann sie später selbst erledigen. Und sie entscheidet ehrlich, ob etwas fertig ist oder ein Mensch nachsehen muss.</p>
+        </div>
+        <div class="chip-row reveal" style="--d:100ms" aria-hidden="true">
+          <span class="chip chip-pass">PASS</span>
+          <span class="chip chip-fail">FAIL</span>
+          <span class="chip chip-human">NEED_HUMAN</span>
+          <span class="novibes">no vibes.</span>
+        </div>
+        <figure class="product-figure reveal" style="--d:150ms">
+          <img src="assets/bg-robot.jpg" alt="Ein Roboter im Jugendstil kniet und pflegt Blumen auf einem Steinsockel." loading="lazy">
+          <figcaption>Der Roboter der Bullshitbox. Er pflegt, was Menschen ihm beibringen.</figcaption>
         </figure>
+        <p class="reveal" style="margin: 2rem auto 0; max-width: 40rem; text-align: center;"><a class="btn btn-ghost" href="https://bullshitbox.ai">Alles zur Bullshitbox auf bullshitbox.ai</a></p>
       </div>
     </section>
 
-    <section class="contact" id="kontakt">
+    <section class="faq" id="fragen">
       <div class="wrap">
-        <div class="contact-card" data-reveal>
-          <h2>Sprechen Sie mit uns.</h2>
-          <p>Erzählen Sie uns kurz, was Sie vorhaben. Wir antworten persönlich — ohne Formulare und ohne Verkaufsdruck.</p>
-          <a class="mail" href="mailto:contact@levelzerocontext.com">contact@levelzerocontext.com</a>
-          <p class="contact-channels">E-Mail · WhatsApp</p>
-          <p class="contact-note">Direkt zu uns. Persönlich und verständlich.</p>
+        <div class="section-head">
+          <p class="eyebrow reveal">Häufige Fragen</p>
+          <h2 class="reveal" style="--d:100ms">Die Antworten, die Sie wirklich brauchen.</h2>
         </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>Was kostet ein KI Projekt?</summary>
+            <p>Jedes Projekt ist anders. Nach dem kostenlosen Erstgespräch bekommen Sie einen klaren Festpreis. Es gibt keine versteckten Kosten.</p>
+          </details>
+          <details>
+            <summary>Brauche ich eine IT Abteilung?</summary>
+            <p>Nein. Wir erklären jeden Schritt in normaler Sprache und richten alles für Sie ein. Ihr Team braucht kein Vorwissen.</p>
+          </details>
+          <details>
+            <summary>Sind meine Daten sicher?</summary>
+            <p>Wir bauen so, dass Ihre Daten in Ihrem Unternehmen bleiben. Wir halten uns an die DSGVO und prüfen jede Lösung, bevor sie startet.</p>
+          </details>
+          <details>
+            <summary>Was ist die Bullshitbox?</summary>
+            <p>Eine kleine Box zwischen KI und Computer. Sie lernt Arbeitsabläufe vom Menschen und kann sie später selbst erledigen. Mehr dazu auf bullshitbox.ai.</p>
+          </details>
+          <details>
+            <summary>Wie lange dauert ein Projekt?</summary>
+            <p>Das hängt von der Aufgabe ab. Kleine Lösungen gehen in wenigen Wochen. Wir sagen Ihnen vorab, was realistisch ist.</p>
+          </details>
+          <details>
+            <summary>Was passiert nach dem Start?</summary>
+            <p>Wir bleiben Ihr Ansprechpartner. Bei Fragen oder Problemen schreiben Sie uns einfach.</p>
+          </details>
+          <details>
+            <summary>Funktioniert das auch mit unserer bestehenden Software?</summary>
+            <p>In der Regel ja. Im Erstgespräch prüfen wir das ehrlich und sagen Ihnen, was möglich ist.</p>
+          </details>
+          <details>
+            <summary>Was, wenn die Lösung nicht hilft?</summary>
+            <p>Sie entscheiden nach jedem Schritt, ob es weitergeht. Es gibt keinen Mindestvertrag.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final" id="kontakt">
+      <div class="wrap">
+        <h2 class="reveal">Bereit für KI, die einfach funktioniert?</h2>
+        <p class="reveal" style="--d:100ms">Erzählen Sie uns kurz, was Sie vorhaben. Sie bekommen eine ehrliche Einschätzung — und entscheiden dann, ob es weitergeht.</p>
+        <div class="reveal" style="--d:200ms">
+          <a class="btn" href="mailto:contact@levelzerocontext.com">Kostenloses Erstgespräch anfragen</a>
+        </div>
+        <p class="note reveal" style="--d:300ms">Persönlich. Verständlich. Ohne Verkaufsdruck.</p>
       </div>
     </section>
   </main>
@@ -161,7 +276,7 @@
   <footer class="site-foot">
     <div class="wrap">
       <p>© 2026 Level Zero Context</p>
-      <p>Handgebaut — keine Cookies, kein Tracking.</p>
+      <p>Handgebaut. Keine Cookies, kein Tracking.</p>
       <nav aria-label="Rechtliches">
         <a href="imprint.html">Impressum</a>
         <a href="privacy.html">Datenschutz</a>

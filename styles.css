@@ -439,16 +439,13 @@ h2 {
 }
 
 .hero-visual {
-  margin: 4rem auto 0;
-  max-width: 52rem;
+  margin: 4rem calc(-1 * clamp(1.25rem, 4.5vw, 4rem)) 0;
 }
 
 .hero-visual img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: var(--radius-3xl);
-  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.16);
 }
 
 /* ---------- problem ---------- */
@@ -738,26 +735,43 @@ h2 {
   align-self: center;
 }
 
-.product-figure {
-  margin: 0 auto;
-  max-width: 56rem;
-  border-radius: var(--radius-3xl);
+/* ---------- epilogue: die Bullshitbox öffnet bald ---------- */
+.opens {
+  position: relative;
+  min-height: 92svh;
+  display: grid;
+  place-items: center;
   overflow: hidden;
-  background: #0c1210;
+  background: url("assets/bg-overview.jpg") center / cover no-repeat;
 }
 
-.product-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
+.opens-veil {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 8, 6, 0.16) 0%, rgba(4, 8, 6, 0.05) 20%, rgba(4, 8, 6, 0.26) 36%, rgba(4, 8, 6, 0.3) 55%, rgba(4, 8, 6, 0.26) 72%, rgba(4, 8, 6, 0.16) 100%),
+    radial-gradient(ellipse 75% 60% at 50% 50%, rgba(4, 8, 6, 0.1), rgba(3, 6, 5, 0.78) 88%);
 }
 
-.product-figure figcaption {
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: rgba(255, 255, 255, 0.6);
+.opens-inner {
+  position: relative;
   text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.opens-line {
+  margin: 0 0 1.5rem;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .opens-line {
+    font-size: 3rem;
+  }
 }
 
 /* ---------- faq ---------- */

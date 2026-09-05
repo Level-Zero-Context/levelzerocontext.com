@@ -438,14 +438,48 @@ h2 {
   text-decoration: underline;
 }
 
-.hero-visual {
-  margin: 4rem calc(-1 * clamp(1.25rem, 4.5vw, 4rem)) 0;
+/* der Roboter als lebendiger Hintergrund der Hero Bühne */
+.hero .wrap {
+  position: relative;
+  z-index: 1;
 }
 
-.hero-visual img {
-  display: block;
+.hero-art {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: min(62svh, 620px);
+  overflow: hidden;
+}
+
+.hero-art img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  animation: kenburns 38s ease-in-out infinite alternate;
+}
+
+/* sanfter Schleier, damit die Typo vorne bleibt */
+.hero-art::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    var(--bg) 0%,
+    rgba(251, 251, 253, 0.6) 30%,
+    rgba(251, 251, 253, 0.16) 62%,
+    rgba(251, 251, 253, 0.08) 100%
+  );
+}
+
+@keyframes kenburns {
+  from {
+    transform: scale(1) translateY(0);
+  }
+  to {
+    transform: scale(1.08) translateY(-2%);
+  }
 }
 
 /* ---------- problem ---------- */
@@ -745,12 +779,20 @@ h2 {
   background: url("assets/bg-overview.jpg") center / cover no-repeat;
 }
 
+.opens::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/bg-overview.jpg") center / cover no-repeat;
+  animation: kenburns 46s ease-in-out infinite alternate;
+}
+
 .opens-veil {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(4, 8, 6, 0.16) 0%, rgba(4, 8, 6, 0.05) 20%, rgba(4, 8, 6, 0.26) 36%, rgba(4, 8, 6, 0.3) 55%, rgba(4, 8, 6, 0.26) 72%, rgba(4, 8, 6, 0.16) 100%),
-    radial-gradient(ellipse 75% 60% at 50% 50%, rgba(4, 8, 6, 0.1), rgba(3, 6, 5, 0.78) 88%);
+    linear-gradient(180deg, rgba(4, 8, 6, 0.12) 0%, rgba(4, 8, 6, 0.04) 22%, rgba(4, 8, 6, 0.18) 38%, rgba(4, 8, 6, 0.2) 58%, rgba(4, 8, 6, 0.16) 78%, rgba(4, 8, 6, 0.12) 100%),
+    radial-gradient(ellipse 80% 65% at 50% 50%, rgba(4, 8, 6, 0.05), rgba(3, 6, 5, 0.5) 92%);
 }
 
 .opens-inner {
@@ -935,6 +977,11 @@ h2 {
     transform: none;
     filter: none;
     transition: none;
+  }
+
+  .hero-art img,
+  .opens::before {
+    animation: none;
   }
 
   .nav-overlay {
